@@ -320,6 +320,11 @@ a#innerrs {
     color: white;
     text-decoration: none;
 }
+img#sofa {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 footer#background {
     background: black;
 }
