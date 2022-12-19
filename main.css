@@ -65,6 +65,7 @@ button.Contact.Us {
     padding: 5px;
     padding-left: 40px;
     padding-right: 40px;
+    transition: 0.8s;
 }
 .new-button {
     display: flex;
@@ -99,6 +100,7 @@ button.read-more {
     width: 30%;
     border: 1px solid #843819;
     padding: 8px;
+    transition: 0.8s;
 
 }
 .about {
@@ -179,6 +181,11 @@ button.buy-now {
     background-color: #843819;
     border-color: #843819;
     color: white;
+    width: 35%;
+    border-bottom-color: #dc3545;
+    border-right-color: #dc3545;
+    transition: 0.8s;
+    border-radius: 5px;
 }
 div#border2 {
     /* border: 1px solid; */
@@ -255,14 +262,7 @@ input#fname {
     border-left-color: #dc3545;
     border: 1px solid;
 }
-button#Subs {
-    margin-top: 2rem;
-    width: 45%;
-    padding: 5px;
-    background-color: #843819;
-    border-color: #843819;
-    border-right-color: #dc3545;
-}
+
 a#inner {
     color: white;
     text-decoration: none;
@@ -300,6 +300,21 @@ button#Send {
     background-color: #843819;
     border: 1px solid #843819;
     padding: 8px;
+    color: white;
+    transition: 0.8s;
+}
+button#Send:hover {
+    color: black;
+}
+button#Sub {
+    width: 49%;
+    margin-top: 2rem;
+    margin-left: -5rem;
+    background-color: #843819;
+    border: 1px solid #843819;
+    padding: 8px;
+    color: white;
+    transition: 0.8s;
 }
 a#innerrs {
     color: white;
@@ -378,12 +393,17 @@ button.Contact:hover{
 button.read-more:hover{
     background-color:  #843819;
     color:white ;
-    border-radius: 20px;
+}
+button.see.more:hover {
+    background-color: #843819;
+    color: white;
 }
 button.buy-now:hover {
     background-color: white;
     border-color: #843819;
     color: black;
+    border:1px solid;
+    border-color: #7c2c0c;
 }
 button#see:hover  {
     background-color:  #843819;
@@ -393,43 +413,52 @@ button#see:hover  {
 a#pads:hover{
     color: white;
 }
-button#Subs:hover{
-    background-color: white;
-    border-color: #843819;
-    color: black;
-    border-radius: 20px;
-  
-
-}
 a#inner:hover{
     color: black;
 }
 div#border{
-    transition: transform .2s ease;
+    transition: transform 0.8s ease;
 }
 div#border:hover{
     background-color: #efe4d1;
     transform: scale(1.02);
 }
 div#border2{
-    transition: transform .2s ease;
+    transition: transform 0.8s ease;
 
 }
 div#border2:hover{
     transform: scale(1.02);
 }
 
-.padd:hover{
+.padd:hover {
     padding: 20px;
-    padding-left: 25px;
-    padding-right: 25px;
+    /* padding-left: 25px; */
+    /* padding-right: 25px; */
     border-radius: 43px;
     background-color: #843819;
+    color: #ffffff;
+    transition-duration: 600ms;
+    transition-timing-function: ease;
+}
+i.fa-solid.fa-arrow-left:hover {
     color: white;
 }
 button#Send:hover {
     background-color: white;
    
+}
+button.see.more {
+    background-color: white;
+    color: #7c2c0c;
+    width: 15%;
+    border: 1px solid #843819;
+    padding: 8px;
+    transition: 0.8s;
+}
+button#Sub:hover {
+    background-color: #fdebcb;
+    color: black;
 }
 a#innerrs:hover{
     color:black;
@@ -450,8 +479,23 @@ div#nn {
     font-family: poppins;
     padding: 30px;
 }
-
-
+img#unique {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+i.fa-brands.fa-square-facebook.fa-2x {
+    color: white;
+}
+i.fa-brands.fa-square-twitter.fa-2x {
+    color: white;
+}
+i.fa-brands.fa-linkedin-in.fa-2x {
+    color: white;
+}
+i.fa-brands.fa-youtube.fa-2x {
+    color: white;
+}
 
 
 
@@ -552,17 +596,46 @@ img#unique {
     text-align: center;
 }
 img#new-sofa {
-    width: 450px;
+    width: 100%;
+    height: auto;
+    display: block;
 }
+button.see.more {
+    width: 24%s;
+}
+input#finame {
+    width: 84%;
+}
+
 img#mapp {
-    margin-top: 6rem;
-    width: 450px;
-    margin-left: 6px;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+button#Send {
+    width: 25%;
+     margin-top: 2rem;
+    margin-left: 0rem;
+    background-color: #843819;
+    border: 1px solid #843819;
+    padding: 8px;
+    color: white;
+    transition: 0.8s;
+}
+footer#background {
+    background: black;
+    text-align: center;
+}
+div#flexx {
+    justify-content: center;
 }
 textarea#finame {
     border-radius: 10px;
     opacity: 77%;
     width: 86%;
+}
+h3#hafge {
+    margin-top: 3rem;
 }
 form {
     margin-top: 3rem;
@@ -573,14 +646,7 @@ h1.contact {
     color: #843819;
     text-align: center;
 }
-button#Send {
-    width: 25%;
-    margin-top: 2rem;
-    margin-left: -1rem;
-    background-color: #843819;
-    border: 1px solid #843819;
-    padding: 8px;
-}
+
 }
   
 /* Media Query for Tablets Ipads portrait mode */
@@ -592,10 +658,9 @@ button#Send {
  margin-top: 1rem;
 }
 img#unique-image {
-     width: 100%;
+    width: 100%;
     height: auto;
     display: block;
-}
 }
 .main-image {
 margin-right: 0rem;
@@ -607,13 +672,7 @@ img#unique {
 .about {
     margin-top: 11rem;
 }
-button.read-more {
-    background-color: white;
-    color: #7c2c0c;
-    width: 41%;
-    border: 1px solid #843819;
-    padding: 8px;
-}
+
 img#sofa {
     width: 300px;
     /* height: 150px; */
@@ -648,9 +707,9 @@ margin-right: -1rem;
 margin-top: 0rem;
 }
 img#unique-image {
-    width: 100%;
-    height: auto;
-    display: block;
+width: 100%;
+height: auto;
+display: block;
 }   
 img#sofa {
     width: 300px;
@@ -674,7 +733,7 @@ textarea#finame {
 /* Media Query for Large screens */
 @media (min-width: 1281px) {
     section#main-section {
-    height:auto;
+    height: auto;
     }
     .new-header {
     margin-top: 7rem;
@@ -684,8 +743,8 @@ margin-right: -17rem;
 margin-top: 2rem;
 }
 img#unique-image {
-    width: 100%;
-    height: auto;
-    display: block;
+width: 100%;
+height: auto;
+display: block;
 }
 }
