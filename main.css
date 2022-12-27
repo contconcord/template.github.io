@@ -570,6 +570,12 @@ img#mapp {
     margin-top: 6rem;
     width: 100%;
 }
+.icoon {
+    /* justify-content: center; */
+    display: flex;
+    /* margin-top: 13px; */
+    margin-left: -3rem;
+}
 img#new-sofa {
     margin-top: 8rem;
     width: 100%;
