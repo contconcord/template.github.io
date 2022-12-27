@@ -587,7 +587,14 @@ img#unique {
     margin-left: 0rem;
     width: 100%;
 }
-
+button.see.more {
+    background-color: white;
+    color: #7c2c0c;
+    width: 23%;
+    border: 1px solid #843819;
+    padding: 8px;
+    transition: 0.8s;
+}
 }
   
 /* Media Query for low resolution  Tablets, Ipads */
